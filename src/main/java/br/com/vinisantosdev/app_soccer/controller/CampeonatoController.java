@@ -35,7 +35,7 @@ public class CampeonatoController {
     }
 
     @DeleteMapping("/{campeonatoId}")
-    public ResponseEntity<Void> deleteCampeonato(@PathVariable Long campeonatoId) {
+    public ResponseEntity<Void> deleteCampeonato(@PathVariable Long campeonatoId) throws EntityNotFoundException{
         campeonatoService.deletarCampeonato(campeonatoId);
         return ResponseEntity.noContent().build();
     }

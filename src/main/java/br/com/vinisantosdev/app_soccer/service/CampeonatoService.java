@@ -62,9 +62,9 @@ public class CampeonatoService {
         }
     }
 
-    public void deletarCampeonato(Long campeonatoId) {
+    public void deletarCampeonato(Long campeonatoId) throws EntityNotFoundException {
         Campeonato campeonato = campeonatoRepository.findById(campeonatoId)
-                .orElseThrow(() -> new RuntimeException("Campeonato não encontrado"));
+                .orElseThrow(() -> new EntityNotFoundException(ErrorIndicator.ERROR_INDICATOR_001));
 
         campeonatoRepository.delete(campeonato);
     }
