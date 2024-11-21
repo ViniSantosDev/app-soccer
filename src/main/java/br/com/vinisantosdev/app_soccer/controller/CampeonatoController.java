@@ -1,6 +1,6 @@
 package br.com.vinisantosdev.app_soccer.controller;
 
-import br.com.vinisantosdev.app_soccer.dto.CampeonatoDTO;
+
 import br.com.vinisantosdev.app_soccer.entity.Campeonato;
 import br.com.vinisantosdev.app_soccer.entity.Time;
 import br.com.vinisantosdev.app_soccer.exception.BusinessException;
@@ -8,7 +8,6 @@ import br.com.vinisantosdev.app_soccer.exception.EntityNotFoundException;
 import br.com.vinisantosdev.app_soccer.service.CampeonatoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
